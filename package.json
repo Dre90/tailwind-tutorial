@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "postcss build src/styles.css -o public/styles.css"
+    "start:css": "postcss src/styles.css -o public/styles.css -w",
+    "build:css": "postcss src/styles.css -o public/styles.css --env production",
+    "build:tailwind": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "repository": {
     "type": "git",
